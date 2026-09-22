@@ -157,6 +157,7 @@
       
         <div class="section local_area">
             <h3>🚚 성동구퀵서비스 차량별 맞춤 배송</h3>
+          <p>상왕십리동 하왕십리동 홍익동 도선동 마장동 사근동 행당동 응봉동 금호동 성수동 송정동 용답동 왕십리 왕십리동 성동 서울숲 뚝섬 강변북로 동서울고속버스 성수일로 아차산로 천호대로 청계천로 동부간선로 성동구 전지역</p>
             <ul>
                 <li>🏍️ 성동구오토바이퀵 : 소형 긴급 화물 및 중요 서류 신속한 배송 지원</li>
                 <li>🚙 성동구다마스퀵 : 날씨 영향 없는 중소형 짐 및 기업 소화물 안심 수송</li>
@@ -254,5 +255,28 @@
       </footer>
    </div>
 </div>
+   <script>
+  // 마우스 우클릭 차단
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // 드래그 차단
+  document.addEventListener('dragstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 텍스트 선택(블록 지정) 차단
+  document.addEventListener('selectstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 복사 키(Ctrl+C / Cmd+C) 차단
+  document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+      e.preventDefault();
+    }
+  });
+</script> 
 </body>
 </html>
